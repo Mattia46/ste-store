@@ -45,6 +45,10 @@ export default function App() {
         <Layout user={data?.user} />
         <ScrollRestoration />
         <Scripts />
+        <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+        <noscript>
+          <img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" no-referrer-when-downgrade />
+        </noscript>
         <script
           dangerouslySetInnerHTML={{
             __html: `window.ENV = ${JSON.stringify(data.ENV)}`,
