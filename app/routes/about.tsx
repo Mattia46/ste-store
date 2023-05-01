@@ -18,7 +18,7 @@ export default function AboutRoute() {
   // const { music } = useLoaderData() as LoaderData;
 
   return (
-    <main>
+    <main className="w-full bg-indigo-200">
       <h1>About</h1>
     </main>
   )
