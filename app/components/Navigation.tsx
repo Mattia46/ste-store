@@ -29,7 +29,7 @@ export const Navigation = ({ user }: any) => {
               <MdAccountCircle className="text-3xl text-white" />
               { user && <p className="mt-1 px-2 hidden md:block text-white">{user.email}</p> }
             </div>
-            <div className="mt-4">
+            <div className="mt-4" onClick={() => setIsOpen(false)}>
               { user
                 ? <Form action="/logout" method="post">
                   <button type="submit"
