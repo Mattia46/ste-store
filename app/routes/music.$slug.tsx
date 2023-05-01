@@ -20,7 +20,7 @@ export const loader: LoaderFunction = async ({ params }) => {
 }
 
 export default function PostRoute() {
-  const { music } = useLoaderData() as LoaderData;
+  const { music } = useLoaderData();
 
   return (
     <main className="w-full bg-indigo-200">

@@ -5,7 +5,7 @@ export const meta: V2_MetaFunction = () => [{ title: "Ste store" }];
 export default function HomeRoute() {
   return (
     <>
-      <div>HomePage</div>
+      <div className="text-3xl flex justify-center mt-12">HomePage</div>
       <Outlet />
     </>
   )

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Footer } from "@components/Footer";
 import { Outlet, Link, Form } from "@remix-run/react";
 import { BiMenu } from 'react-icons/bi';
+import { MdAccountCircle } from 'react-icons/md';
 
 export const Navigation = ({ user }: any) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -24,12 +25,11 @@ export const Navigation = ({ user }: any) => {
             <Link className="mt-1 block px-4 py-1 text-white font-semibold rounded hover:bg-gray-800" to="about">About</Link>
           </div>
           <div className="px-4 py-5 border-t border-gray-800">
-            <div className="flex items-center">
-              <img className="h-8 w-8 border-2 border-gray-600 rounded-full object-cover" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80" alt="Your avatar" />
-              <span className="ml-3 font-semibold text-white">Mattia</span>
+            <div className="flex">
+              <MdAccountCircle className="text-3xl text-white" />
+              { user && <p className="mt-1 px-2 hidden md:block text-white">{user.email}</p> }
             </div>
             <div className="mt-4">
-              { user && <p className="mt-1 px-2 hidden md:block text-white">{user.email}</p> }
               { user
                 ? <Form action="/logout" method="post">
                   <button type="submit"
