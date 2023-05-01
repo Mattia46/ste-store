@@ -37,10 +37,13 @@ model Note {
   userId String
 }
 
-model Post {
+model Music {
   slug String @id
   title String
-  markdown String
+  description String?
+  image String?
+  previewUrl String?
+  link String?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
