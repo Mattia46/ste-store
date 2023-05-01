@@ -9,7 +9,7 @@ import {
   useLoaderData,
 } from "@remix-run/react";
 import { getEnv } from "../.env.server";
-import { Layout } from "@components/Layout";
+import { Navigation } from '@components/Navigation';
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
 import { getUser } from "./session.server";
@@ -42,7 +42,7 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full">
-        <Layout user={data?.user} />
+        <Navigation user={data?.user} />
         <ScrollRestoration />
         <Scripts />
         <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
