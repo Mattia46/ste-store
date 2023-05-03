@@ -5,8 +5,8 @@ import { ImLocation } from 'react-icons/im';
 
 export const Footer = () => {
   return (
-    <div className="text-2xl self-center justify-center flex p-4 lg:w-64 lg:text-4xl">
-      <div className="flex w-48 md:w-96  justify-between">
+    <div className="text-2xl self-center justify-center fixed bg-gray-400 md:bg-transparent w-full bottom-0 flex p-2">
+      <div className="flex w-48 md:w-96 text-white md:text-black md:text-3xl justify-between">
         <a aria-label="Phone" href="tel:085 431 3666">
           <MdCall />
         </a>

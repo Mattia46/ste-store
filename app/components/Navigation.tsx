@@ -9,7 +9,7 @@ export const Navigation = ({ user }: any) => {
 
   return (
     <div className="md:flex md:flex-col md:h-screen">
-      <header className="bg-gray-600 h-16">
+      <header className="bg-gray-600 h-16 top-0 fixed w-full z-50">
         <div className="flex items-center justify-between p-4">
           <Link className="flex items-center text-white text-2xl" to="/">Cornerman</Link>
           <button onClick={() => setIsOpen(!isOpen)} type="button" className="block text-white text-3xl hover:text-white focus:text-white focus:outline-none">
@@ -44,7 +44,7 @@ export const Navigation = ({ user }: any) => {
           </div>
         </nav> }
       </header>
-      <div className="grow" onClick={() => setIsOpen(false)}>
+      <div className="grow mt-16" onClick={() => setIsOpen(false)}>
         <Outlet />
       </div>
       <Footer />

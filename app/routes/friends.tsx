@@ -21,7 +21,7 @@ export default function FriendsRoute() {
   return (
     <main className="md:w-2/3 flex flex-wrap flex-col md:flex-row ml-auto mr-auto">
       {music.map((music) => (
-        <div key={music.slug} className="border-2 md:m-2 rounded-2xl m-6">
+        <div key={music.slug} className="border-2 md:m-2 rounded-2xl mx-4 mt-4">
           <ListView music={music} route="friends"/>
         </div>
       ))}
