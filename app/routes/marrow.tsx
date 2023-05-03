@@ -22,10 +22,9 @@ export default function MarrowRoute() {
     <main className="md:w-2/3 flex flex-wrap flex-col md:flex-row ml-auto mr-auto">
       {music.map((music) => (
         <div key={music.slug} className="border-2 md:m-2 rounded-2xl m-6">
-          <ListView music={music} />
+          <ListView music={music} route="marrow"/>
         </div>
       ))}
-      {/* <Outlet /> */}
     </main>
   )
 }
