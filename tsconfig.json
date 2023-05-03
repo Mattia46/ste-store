@@ -19,7 +19,8 @@
       "~/*": ["./app/*"],
       "@components/*": ["./app/components/*"],
       "@routes/*": ["./app/routes/*"],
-      "@models/*": ["./app/models/*"]
+      "@models/*": ["./app/models/*"],
+      "@constants": ["./app/constants"]
     },
     "skipLibCheck": true,
     "noEmit": true
