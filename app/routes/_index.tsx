@@ -1,12 +1,10 @@
-import { Outlet } from "@remix-run/react";
 import type { V2_MetaFunction } from "@remix-run/node";
 export const meta: V2_MetaFunction = () => [{ title: "Ste store" }];
 
 export default function HomeRoute() {
   return (
-    <>
-      <div className="text-3xl flex justify-center mt-12">HomePage</div>
-      <Outlet />
-    </>
+    <div className="flex justify-center h-full md:mt-48">
+      <img alt="logo" src="logo.png" width="800"/>
+    </div>
   )
 }

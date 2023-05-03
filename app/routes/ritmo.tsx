@@ -3,7 +3,7 @@
 // import { json } from '@remix-run/node';
 // import { getList } from '~/models/music.server';
 import { ListView } from '@components/ListView';
-import { music } from '@constants';
+import { music as musicList } from '@constants';
 
 // type LoaderData = {
 //   music: Awaited<ReturnType<typeof getList>>
@@ -17,6 +17,7 @@ import { music } from '@constants';
 
 export default function RitmoRoute() {
   // const { music } = useLoaderData() as LoaderData;
+  const music = musicList.sort(() => Math.random() - 0.5);
 
   return (
     <main className="md:w-2/3 flex flex-wrap flex-col md:flex-row ml-auto mr-auto">
