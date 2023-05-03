@@ -1,7 +1,6 @@
 import { BsFacebook } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { MdCall } from 'react-icons/md';
-import { ImLocation } from 'react-icons/im';
 
 export const Footer = () => {
   return (
@@ -12,9 +11,6 @@ export const Footer = () => {
         </a>
         <a rel="noreferrer" target="_blank" href="https://www.facebook.com/stefano.marro">
           <BsFacebook />
-        </a>
-        <a rel="noreferrer" href="https://www.google.com/maps/dir/?api=1&amp;destination=Via%20Tiburtina%20Valeria,%20427,%2065129%20Pescara%20PE,%20Italy" target="_blank">
-          <ImLocation />
         </a>
         <a href="mailto">
           <MdEmail />
